@@ -2,9 +2,8 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-def fetch_app_store_details(app_id):
+def fetch_app_store_details(url):
 
-    url = f"https://apps.apple.com/app/id{app_id}"
     response = requests.get(url)
     html_content = response.content
 
